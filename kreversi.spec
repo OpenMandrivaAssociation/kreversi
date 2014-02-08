@@ -2,7 +2,7 @@ Name:		kreversi
 Summary:	Old reversi board game, also known as othello
 URL:		http://www.kde.org/applications/games/kreversi/
 Version:	4.12.1
-Release:	1
+Release:	2
 Epoch:		1
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL

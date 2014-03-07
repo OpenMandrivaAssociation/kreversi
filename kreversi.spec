@@ -1,13 +1,14 @@
-Name:		kreversi
 Summary:	Old reversi board game, also known as othello
-URL:		http://www.kde.org/applications/games/kreversi/
+Name:		kreversi
 Version:	4.12.3
-Release:	1
+Release:	2
 Epoch:		1
+License:	GPLv2+ and LGPLv2+ and GFDL
 Group:		Graphical desktop/KDE
-License:	GPLv2 and LGPLv2 and GFDL
-Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
+Url:		http://www.kde.org/applications/games/kreversi/
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	libkdegames-devel
+Requires:	libkdegames-corebindings
 Conflicts:	kdegames4-core < 1:4.9.80
 
 %description
@@ -40,6 +41,9 @@ moves.
 %makeinstall_std -C build
 
 %changelog
+* Fri Mar 07 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.3-2
+- Requires libkdegames-corebindings
+
 * Tue Mar 04 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.3-1
 - New version 4.12.3
 

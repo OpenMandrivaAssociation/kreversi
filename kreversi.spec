@@ -1,3 +1,5 @@
+%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
+
 Summary:	Old reversi board game, also known as othello
 Name:		kreversi
 Version:	17.04.0
@@ -6,7 +8,7 @@ Epoch:		1
 License:	GPLv2+ and LGPLv2+ and GFDL
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org/applications/games/kreversi/
-Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	libkdegames-devel
 Requires:	libkdegames-corebindings
 Conflicts:	kdegames4-core < 1:4.9.80

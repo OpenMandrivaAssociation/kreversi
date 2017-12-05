@@ -2,7 +2,7 @@
 
 Summary:	Old reversi board game, also known as othello
 Name:		kreversi
-Version:	17.08.3
+Version:	17.11.90
 Release:	1
 Epoch:		1
 License:	GPLv2+ and LGPLv2+ and GFDL
@@ -25,7 +25,6 @@ moves.
 %{_datadir}/applications/org.kde.kreversi.desktop
 %{_datadir}/kreversi
 %{_datadir}/knotifications5/*
-%{_datadir}/kxmlgui5/kreversi
 %{_datadir}/metainfo/org.kde.kreversi.appdata.xml
 %{_iconsdir}/*/*/apps/kreversi.png
 %{_iconsdir}/*/*/actions/lastmoves.*

@@ -2,8 +2,8 @@
 
 Summary:	Old reversi board game, also known as othello
 Name:		kreversi
-Version:	22.12.3
-Release:	2
+Version:	23.03.90
+Release:	1
 Epoch:		1
 License:	GPLv2+ and LGPLv2+ and GFDL
 Group:		Graphical desktop/KDE

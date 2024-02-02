@@ -2,8 +2,8 @@
 
 Summary:	Old reversi board game, also known as othello
 Name:		plasma6-kreversi
-Version:	24.01.90
-Release:	2
+Version:	24.01.95
+Release:	1
 License:	GPLv2+ and LGPLv2+ and GFDL
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org/applications/games/kreversi/

@@ -7,7 +7,7 @@ Release:	1
 Epoch:		1
 License:	GPLv2+ and LGPLv2+ and GFDL
 Group:		Graphical desktop/KDE
-Url:		http://www.kde.org/applications/games/kreversi/
+Url:		https://www.kde.org/applications/games/kreversi/
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires:  cmake(KF5Config)

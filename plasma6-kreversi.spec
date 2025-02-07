@@ -5,7 +5,7 @@
 
 Summary:	Old reversi board game, also known as othello
 Name:		plasma6-kreversi
-Version:	24.12.1
+Version:	24.12.2
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+ and LGPLv2+ and GFDL
 Group:		Graphical desktop/KDE

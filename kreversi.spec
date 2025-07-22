@@ -5,7 +5,7 @@
 
 Summary:	Old reversi board game, also known as othello
 Name:		kreversi
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+ and LGPLv2+ and GFDL
 Group:		Graphical desktop/KDE
@@ -36,6 +36,11 @@ BuildRequires:  cmake(Qt6Test)
 BuildRequires:	cmake(KF6DocTools)
 BuildRequires:	cmake(KDEGames6)
 
+%rename plasma6-kreversi
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 KReversi is a simple one player strategy game played against the computer.
 
@@ -53,17 +58,3 @@ moves.
 %{_iconsdir}/*/*/apps/kreversi.png
 %{_iconsdir}/*/*/actions/lastmoves.*
 %{_iconsdir}/*/*/actions/legalmoves.*
-#------------------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n kreversi-%{?git:%{gitbranchd}}%{!?git:%{version}}
-
-%build
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-%ninja
-
-%install
-%ninja_install -C build
-%find_lang %{name} --all-name --with-html
